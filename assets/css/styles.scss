@@ -41,8 +41,8 @@ nav {
     display: flex;
 	justify-content: space-between;
 }
-nav a {
-	text-decoration: underline;
+a {
+	text-decoration: underline dotted;
 	color: rgb(200,200,200);
 }
 
@@ -64,4 +64,30 @@ hr {
 .endnote {
 	text-align: center;
 	color: rgb(100,100,100);
+}
+
+ul {
+	padding-left: 2rem;
+}
+
+.in1 {
+	margin-left: 1rem;
+}
+.in2 {
+	margin-left: 2rem;
+}
+.in3 {
+	margin-left: 3rem;
+}
+.in4 {
+	margin-left: 4rem;
+}
+.in5 {
+	text-indent: 5rem;
+}
+.in6 {
+	text-indent: 6rem;
+}
+.in7 {
+	text-indent: 7rem;
 }
