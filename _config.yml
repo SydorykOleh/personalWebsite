@@ -1,3 +1,7 @@
+min_ruby_version: 2.4.0
+name: Sydoryk Oleh personal website
+url: sydorykoleh.github.io/personalwebsite
+repository: https://github.com/SydorykOleh/personalWebsite
 collections:
   codes:
     output: true
