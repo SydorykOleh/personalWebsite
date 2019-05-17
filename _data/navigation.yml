@@ -1,5 +1,4 @@
-- name: about
-  link: /
+
 - name: cgi
   link: /cgi.html
 - name: portfolio
@@ -14,3 +13,5 @@
   link: /blog.html
 - name: contact
   link: contacts.html
+- name: about
+  link: /
