@@ -12,6 +12,6 @@
 - name: blog
   link: /blog.html
 - name: contact
-  link: contacts.html
+  link: /contacts.html
 - name: about
   link: /
