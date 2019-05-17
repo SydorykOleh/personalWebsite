@@ -1,0 +1,17 @@
+---
+title: Portfolio
+---
+<h1>PORTFOLIO</h1>
+<ul>
+	{% for portfolio in site.portfolio %}
+		<li>
+			<h2><a href="{{ portfolio.url }}">{{ portfolio.title }}</a></h2>
+			Type: {{ portfolio.type }}<br>
+			Year: {{ portfolio.year }}<br>
+			Company: {{ portfolio.company }}<br>
+			Role: {{ portfolio.role }}<br>
+			{{ portfolio.content }}
+			<hr>
+		</li>
+	{% endfor %}
+</ul>

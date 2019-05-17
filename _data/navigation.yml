@@ -1,0 +1,14 @@
+- name: about
+  link: /
+- name: cgi
+  link: /cgi.html
+- name: portfolio
+  link: /portfolio.html
+- name: codeLAB
+  link: /coding.html
+- name: ayahuasca
+  link: /ayahuasca.html
+- name: blog
+  link: /blog.html
+- name: contacts
+  link: contacts.html

@@ -1,0 +1,14 @@
+---
+title: code lab
+---
+
+<h1>CODING LABORATORY</h1>
+
+<ul>
+	{% for item in site.data.codingchallenges %}
+		<li>
+     		<a href="{{ item.link }}">{{ item.name }}</a>
+		</li>
+	
+	{% endfor %}
+</ul>
