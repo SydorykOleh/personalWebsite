@@ -4,25 +4,43 @@
 @import "main";
 @import "../assets/css/bootstrap/bootstrap";
 
+@media (min-width: 1200px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
 
+html { 
+	font-size: 87.5%; 
+}
 body{
 	background: rgb(36,37,45);
 	color: rgb(200, 200, 200);
 	font-family: 'Roboto Mono', monospace;
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 h1{
-	font-size: 1.75rem;	
+	font-size: 2rem;	
 }
 h2{
-	font-size: 1.5rem;	
+	font-size: 1.65rem;	
 }
 h3{
-	font-size: 1.25em;	
+	font-size: 1.4rem;	
 }
 h4{
-	font-size: 1.13em;	
+	font-size: 1.25rem;	
 }
+nav a {
+	text-decoration: underline;
+	color: rgb(200,200,200);
+}
+
 hr {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
@@ -30,6 +48,13 @@ hr {
 }
 .current {
   color: rgb(255,230,180);
+}
+
+.container {
+	margin-top: 1rem;
+}
+.experience{
+	text-align: left;
 }
 .endnote {
 	text-align: center;
