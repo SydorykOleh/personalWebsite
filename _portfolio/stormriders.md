@@ -6,6 +6,7 @@ year: 2017
 role: CG supervisor
 company: Attraktion! GmbH
 link: https://www.attraktion.com/studios/storm-riders/
+shortname: stormriders
 ---
 
 Ride on submarine trough ocean, 

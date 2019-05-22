@@ -3,15 +3,14 @@ title: Portfolio
 header: Portfolio
 context: Want to be an artist kind of a guy
 ---
-<ul>
+<div class="row">
+
 	{% for portfolio in site.portfolio %}
-		<li>
-			<h3><a href="{{ portfolio.url }}">{{ portfolio.title }}</a></h3>
-			Type: {{ portfolio.type }}<br>
-			Year: {{ portfolio.year }}<br>
-			Company: {{ portfolio.company }}<br>
-			Role: {{ portfolio.role }}<br>
-			{{ portfolio.content }}
-		</li>
+	<div class="col-lg-4 col-md-6 col-xs-1 thumb">
+		<a href="../portfolio/{{ portfolio.shortname }}.html" class="fancybox" rel="ligthbox">
+			<img src="../assets/images/portfolio/preview/{{ portfolio.shortname }}.jpg" class="zoom img-fluid "  alt="">
+		</a>
+	</div>
 	{% endfor %}
-</ul>
+
+</div>
