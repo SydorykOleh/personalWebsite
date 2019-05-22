@@ -58,9 +58,16 @@ img.zoom {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
-        
+
+img.zoom:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}    
  
 .transition {
     -webkit-transform: scale(1.2); 
