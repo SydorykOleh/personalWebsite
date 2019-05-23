@@ -7,9 +7,9 @@ context: Want to be an artist kind of a guy
 
 	{% for portfolio in site.portfolio %}
 	<div class="col-lg-4 col-md-6 col-xs-1 thumb">
-		<a href="../portfolio/{{ portfolio.shortname }}.html" class="fancybox" rel="ligthbox">
+		<div class="fancybox" rel="ligthbox">
 			<img src="../assets/images/portfolio/preview/{{ portfolio.shortname }}.jpg" class="zoom img-fluid "  alt="">
-		</a>
+		</div>
 	</div>
 	{% endfor %}
 </div>
