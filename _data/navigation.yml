@@ -1,9 +1,9 @@
 
-- name: cgi
+- name: CGI
   link: /cgi.html
-- name: portfolio
+- name: PORTFOLIO
   link: /portfolio.html
-- name: codeLAB
+- name: CODELAB
   link: /coding.html
-- name: about
+- name: ABOUT
   link: /
