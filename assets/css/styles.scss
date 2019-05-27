@@ -21,21 +21,11 @@ html {
 body{
 	background: rgb(36,37,45);
 	color: rgb(200, 200, 200);
-	font-family: 'Roboto Mono', monospace;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
+
 h1{
-	font-size: 2rem;	
-	margin-bottom: 0rem;
-}
-h2{
-	font-size: 1.7rem;	
-}
-h3{
-	font-size: 1.45rem;	
-}
-h4{
-	font-size: 1.3rem;	
+    margin-bottom: 0rem;
 }
 p {	
 	text-align: justify;
@@ -44,8 +34,8 @@ p {
 a {
 	text-decoration: underline;
 	color: rgb(220,220,220);
+    font-family: monospace;
 }
-
 hr {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
@@ -133,4 +123,9 @@ ul {
 
 .indent {
 	margin-left: 1rem;
+}
+
+.links a {
+    font-size:1.5rem;
+    margin-right: 0.5rem;
 }
