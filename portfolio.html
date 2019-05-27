@@ -7,8 +7,9 @@ context: Trying to be artistic :)
 
 	{% for portfolio in site.portfolio %}
 	<div class="col-lg-12 col-md-12 col-xs-12 thumb">
-		<div class="fancybox" rel="ligthbox">
-			<img src="../assets/images/portfolio/preview/{{ portfolio.shortname }}.jpg" class="zoom img-fluid"  alt="">
+		<div class="fancybox zoom" rel="ligthbox">
+			<img src="../assets/images/portfolio/preview/{{ portfolio.shortname }}.jpg" class="img-fluid"  alt="">
+			<div class="overImage">{{ portfolio.title }}</div>
 		</div>
 	</div>
 	{% endfor %}
