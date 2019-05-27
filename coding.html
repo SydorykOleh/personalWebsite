@@ -1,14 +1,15 @@
 ---
 title: Coding Lab
 header: Coding Laboratory
-context: Excited programmer
+context: Enthusiastic programmer
 ---
 Hi, I'm Oleh, and I'm learning programming with JavaScript and p5.js library, to make drawing on web pages much easier.<br>
+Here are some of my experiments:
 
 <ul>
 	{% for item in site.data.codingchallenges %}
 		<li>
-     		<h3><a href="{{ item.link }}">{{ item.name }}</a></h3>
+     		<a href="{{ item.link }}">{{ item.name }}</a>
 		</li>
 	
 	{% endfor %}

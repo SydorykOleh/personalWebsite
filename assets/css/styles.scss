@@ -6,8 +6,13 @@
 
 @media (min-width: 1200px) {
   .container {
-    width: 960px;
+    max-width: 720px;
   }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
 }
 
 html { 
@@ -17,20 +22,20 @@ body{
 	background: rgb(36,37,45);
 	color: rgb(200, 200, 200);
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 h1{
 	font-size: 2rem;	
 	margin-bottom: 0rem;
 }
 h2{
-	font-size: 1.65rem;	
+	font-size: 1.7rem;	
 }
 h3{
-	font-size: 1.4rem;	
+	font-size: 1.45rem;	
 }
 h4{
-	font-size: 1.25rem;	
+	font-size: 1.3rem;	
 }
 p {	
 	text-align: justify;
@@ -58,15 +63,15 @@ img.zoom {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 img.zoom:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }    
  
 .transition {
