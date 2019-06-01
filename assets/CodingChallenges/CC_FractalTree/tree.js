@@ -27,6 +27,4 @@ function draw(){
 	if (iteration > 15) {
 		noLoop();
 	}
-
-	console.log(tree);
 }

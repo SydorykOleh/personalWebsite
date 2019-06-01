@@ -51,7 +51,6 @@ function draw(){
 			cells[i][j].draw();	
 		}
 	}
-	console.log(cells);
 	noLoop();
 }
 

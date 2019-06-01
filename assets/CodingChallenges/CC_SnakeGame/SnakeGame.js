@@ -65,7 +65,6 @@ function pickLocation(){
 function keyTyped(){
   if (key == 'a' && s.xspeed == 0){
     s.dir(-1, 0); 
-    console.log("AAAA");
   } else if(key == 'd' && s.xspeed == 0){
     s.dir(1, 0);
   } else if(key === 'w' && s.yspeed == 0){

@@ -18,7 +18,6 @@ function setup() {
 	count = 0;
 	background(37, 37, 45);
 	frameRate(20);
-	console.log(randomXmax, randomYmax, randomYmin);
 }
 
 function draw() {
