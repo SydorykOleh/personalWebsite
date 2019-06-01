@@ -7,9 +7,9 @@ Hi, I'm Oleh, and I'm learning programming with JavaScript and p5.js library, to
 Here are some of my experiments:
 
 <ul>
-	{% for item in site.data.codingchallenges %}
+	{% for cc in site.cc %}
 		<li>
-     		<a href="{{ item.link }}">{{ item.name }}</a>
+     		<a href="../cc/{{ cc.shortname }}.html">{{ cc.title }}</a>
 		</li>
 	
 	{% endfor %}

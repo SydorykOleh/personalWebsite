@@ -5,13 +5,14 @@ var whileCount;
 
 
 function setup() {  
-  createCanvas(windowWidth, windowHeight);
+  var canvas = createCanvas(690, 690);
+  canvas.parent('sketch-holder');
   current = new Particle(width/2, 0);
   count = 0;
 }
 
 function draw() {
-	background(50);
+	background(37, 37, 45);
 
 	//add TEXT
 	fill(200, 80, 20);
@@ -25,7 +26,7 @@ function draw() {
 	rotate(-PI/6);	
 	
 	whileCount = 0
-	while(whileCount < 10){
+	while(whileCount < 100){
 		while (!current.finished() && !current.intersects(snowflakes)){
 			current.update();
 	  	}
@@ -36,7 +37,7 @@ function draw() {
 		count++;
 		}
 	
-	if (count >= 2500) {
+	if (count >= 1000) {
 	  noLoop();
 	  console.log(count);
 	}

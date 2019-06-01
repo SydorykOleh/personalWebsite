@@ -1,7 +1,7 @@
 ---
 type: personal project
-title: Private interior
-shortname: interior
+title: Interior
+shortname: 06_interior
 ---
 
 First interior visualization I did for myself

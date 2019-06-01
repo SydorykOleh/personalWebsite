@@ -5,8 +5,8 @@ var moveX;
 var moveY;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight, P2D);  
-
+  var canvas = createCanvas(690, 690, P2D);  
+  canvas.parent('sketch-holder');
   speed = windowWidth/70;
   
   for (var i = 0; i < 1000; i++) {
@@ -22,7 +22,7 @@ function draw() {
   }
   translate(moveX, moveY);
   //Draw stars
-  background(40);
+  background(36,37,45);
   translate(width / 2, height / 2);  
   for (var i = 0; i < stars.length; i++) {
     stars[i].move();

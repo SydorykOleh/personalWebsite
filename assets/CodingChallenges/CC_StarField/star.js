@@ -8,7 +8,7 @@ function Star() {
   this.z = random(width);
   this.colorValue = (random(50, 255));
   this.color = color(random(0.8, 1)*this.colorValue,random(0.8, 1)*this.colorValue,random(0.8, 1)*this.colorValue);
-  this.radius = random(1,10);
+  this.radius = random(1,5);
 
 
   //Store Z value for future

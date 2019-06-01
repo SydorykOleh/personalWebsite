@@ -3,7 +3,7 @@ class Particle {
 	constructor(radius, angle){
 		this.pos = p5.Vector.fromAngle(angle);
 		this.pos.mult(radius*1);
-		this.scale = 20;
+		this.scale = 10;
 		this.r = this.scale/4;
 		this.lengthX = random(-this.scale/2,this.scale/2);
 		this.lengthY = random(-this.scale/2,this.scale/2);
@@ -39,6 +39,7 @@ class Particle {
 	show (){
 		//Draw line
 
+		/*
 		stroke(128, 195, 255, 3);
 		strokeWeight(20);
 		line(this.pos.x, this.pos.y, this.pos.x+this.lengthX*5, this.pos.y+this.lengthY*3);
@@ -50,12 +51,12 @@ class Particle {
 		stroke(215, 235, 255, 12);
 		strokeWeight(3);
 		line(this.pos.x, this.pos.y, this.pos.x+this.lengthX, this.pos.y+this.lengthY);
-		
+		*/
 
 		stroke(215, 235, 255, 50);
 		strokeWeight(1);
 		line(this.pos.x, this.pos.y, this.pos.x+(this.lengthX/2), this.pos.y+(this.lengthY/2));
-
+		
 
 		//noStroke();
 	}

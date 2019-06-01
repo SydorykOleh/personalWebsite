@@ -1,5 +1,5 @@
 collections:
-  codes:
+  cc:
     output: true
   portfolio:
     output: true
@@ -8,14 +8,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "coding"
-    values:
-      layout: "code"
-  - scope:
-      path: ""
       type: "portfolio"
     values:
-      layout: "portfolio"
+      layout: "portfolio"  
+  - scope:
+      path: ""
+      type: "cc"
+    values:
+      layout: "code"
   - scope:
       path: ""
       type: "posts"

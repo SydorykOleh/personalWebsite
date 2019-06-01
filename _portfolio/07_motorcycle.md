@@ -1,7 +1,7 @@
 ---
 type: personal project
 title: Harley motorcycle
-shortname: motorcycle
+shortname: 07_motorcycle
 ---
 
 First serious project of mine.

@@ -1,7 +1,7 @@
 ---
 type: personal work
-title: My first product visualization
-shortname: headset
+title: Headset
+shortname: 02_headset
 ---
 
 First modeling and visualization work.

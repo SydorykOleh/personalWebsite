@@ -1,7 +1,8 @@
 ---
 type: personal project
 title: Robots
-shortname: robots
+shortname: 05_robots
+header: Robots
 ---
 
 Lighting practive.
