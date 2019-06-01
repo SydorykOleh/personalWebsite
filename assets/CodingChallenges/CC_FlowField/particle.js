@@ -2,14 +2,16 @@ function Particle() {
 	this.pos = createVector(random(width), random(height));
 	this.vel = createVector(0,0);
 	this.acc = createVector(0,0);
-	this.maxspeedUP = 4;
+	this.maxspeedUP = 1;
 	this.maxspeedDown = 2;
 	this.maxspeed = random(this.maxspeedDown, this.maxspeedUP);
 
-	this.r = random(rLow, rHigh);
-	this.g = random(gLow, gHigh);
-	this.b = random(bLow, bHigh);
+	this.followA = random(1/5, 1/20);
 
+	this.hue = hue + random(100, 0);
+	this.S = random(30, 80);
+	this.B = random(50,100);
+	this.A = random(.01, .05);
 	this.prevPos = this.pos.copy();
 
 	this.update = function() {
@@ -33,7 +35,7 @@ function Particle() {
 		force.add(vectors[x - 1 + ((y + 1) * cols)]);
 		force.add(vectors[x - 1 + ((y + 0) * cols)]);
 		force.add(vectors[x - 1 + ((y - 1) * cols)]);
-		force.mult(1/9);
+		force.mult(this.followA);
 		
 		this.applyForce(force);
 	}
@@ -44,8 +46,7 @@ function Particle() {
 	}
 
 	this.show = function() {
-
-		stroke(this.r, this.g, this.b, map(this.maxspeed, this.maxspeedDown, this.maxspeedUP, 10, 4));
+		stroke(this.hue, this.S, this.B, this.A);
 		strokeWeight(1);
 		line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
 		this.updatePrev();

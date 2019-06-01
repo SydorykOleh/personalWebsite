@@ -1,5 +1,5 @@
 var cols, rows;
-var scl = 60;
+var scl = 250;
 
 var w;
 var h;
@@ -11,8 +11,9 @@ var off = 0.1;
 simplex = new SimplexNoise();
 
 function setup() {
-	createCanvas(windowWidth, windowHeight, WEBGL);
-	w = windowWidth * 1;
+	var canvas = createCanvas(690, 690, WEBGL);
+	canvas.parent('sketch-holder');
+	w = windowWidth * 1.5;
 	h = windowHeight * 4;
 
 	cols = floor(w / scl);
@@ -33,19 +34,20 @@ function draw(){
   	for (var y = 0; y < rows; y++) {
     	var xoff = 0;
     	for (var x = 0; x < cols; x++) {
-      		terrain[x][y] = simplex.noise2D(xoff, yoff) * 40 ;
-      		xoff += 0.1;
+      		terrain[x][y] = simplex.noise2D(xoff, yoff) * 50 ;
+      		xoff += 0.2;
     	}
-    	yoff += 0.1;
+    	yoff += 0.2;
   	}
 
-	background(40);
+	background(37,37,45);
 	rotateX(PI/3);
-  	translate(-w/2, -h * 0.75);  
+  	translate(-w/2, -h * .8);  
 
   	beginShape(LINES);
 	for (var x = 0; x < cols - 2; x++) {
-		stroke(200, 80, 20,);
+		stroke(200, 80, 20);
+		strokeWeight(2);
 		noFill();
 		vertex(x * scl, 0, terrain[x][0]);
 		vertex((x + 1) * scl, 0, terrain[x + 1][0]);

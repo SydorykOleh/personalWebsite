@@ -17,7 +17,8 @@ var stepsStart = 20;
 var count = 0;
 
 function setup() {
-	createCanvas(400, 400);
+	var canvas = createCanvas(690, 690);
+	canvas.parent('sketch-holder');
 	pixelDensity(1);
 }
 
@@ -65,6 +66,4 @@ function draw() {
 	//nMax = nMax + (nMaxEnd - nMax) / steps;
 	nMax = nMaxstart + (1/-(Math.log(sclEnd) / Math.log(scl))) * nMaxEnd;
 	count ++;
-
-	console.log(nMax, sclEnd);
 }

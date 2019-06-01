@@ -2,7 +2,12 @@
 title: Game of life
 shortname: 03_gameoflife
 link:
-github:
+github: CC_GameOfLife
 ---
 
-Simulation of game of life
+<script src="../assets/CodingChallenges/CC_GameOfLife/Life.js"></script>
+
+Simulating game of Life
+
+<div id="sketch-holder">
+</div>

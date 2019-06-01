@@ -2,7 +2,13 @@
 title: Flow field
 shortname: 04_flowfield
 link:
-github:
+github: CC_FlowField
 ---
 
-Using vectors and animated procedural noise to draw interesting stuff
+<script src="../assets/CodingChallenges/CC_FlowField/flowField.js"></script>
+<script src="../assets/CodingChallenges/CC_FlowField/particle.js"></script>
+
+Drawing patterns using vectors with procedural noise
+
+<div id="sketch-holder">
+</div>

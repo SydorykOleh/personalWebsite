@@ -11,9 +11,10 @@ var CellBGColor;
 var GridColor;
 
 function setup(){
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(690, 690);
+	canvas.parent('sketch-holder');
 
-	BGColor = color(128);
+	BGColor = color(37,37,45);
 	GridColor = color(80);
 	CellColor = color(220, 190, 160);
 	CellBGColor = color(100);

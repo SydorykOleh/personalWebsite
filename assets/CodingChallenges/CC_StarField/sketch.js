@@ -7,7 +7,7 @@ var moveY;
 function setup() {
   var canvas = createCanvas(690, 690, P2D);  
   canvas.parent('sketch-holder');
-  speed = windowWidth/70;
+  speed = windowWidth/400;
   
   for (var i = 0; i < 1000; i++) {
     stars[i] = new Star();

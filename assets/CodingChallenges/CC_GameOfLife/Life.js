@@ -6,13 +6,14 @@ function make2DArray(cols, rows) {
   return arr;
 }
 
-var gridSize = 25;
+var gridSize = 5;
 var rows;
 var cols;
 var grid;
 
 function setup(){
-  createCanvas(windowWidth,windowHeight);
+  var canvas = createCanvas(690, 690);
+  canvas.parent('sketch-holder');
 
   rows = floor(width/gridSize);
   cols = floor(height/gridSize);
@@ -26,7 +27,7 @@ function setup(){
       grid[i][j] = floor(random(2));
     }
   }
-
+}
 
 function draw(){
 
@@ -39,12 +40,11 @@ function draw(){
       let y = i * gridSize;
       let x = j * gridSize;
       if (grid[i][j] == 1) {
-        fill(200, 80, 20);
-        stroke(60);
+        fill(200, 200, 200);
+        noStroke();
         rect(x, y, gridSize, gridSize);
       } else {
-        fill(40, 40, 40);
-        stroke(60);
+        fill(37, 37, 45);
         rect(x, y, gridSize, gridSize);
       }
     }

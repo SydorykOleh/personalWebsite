@@ -2,7 +2,13 @@
 title: Fractal tree
 shortname: 08_fractaltree
 link:
-github:
+github: CC_FractalTree
 ---
 
-So amazed with results. Procedural fractal tree generation
+<script src="../assets/CodingChallenges/CC_FractalTree/branch.js"></script>
+<script src="../assets/CodingChallenges/CC_FractalTree/tree.js"></script>
+
+Proceduraly created tree with a lot of randomization. Very happy with result.
+
+<div id="sketch-holder">
+</div>
