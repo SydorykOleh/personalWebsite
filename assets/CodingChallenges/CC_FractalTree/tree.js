@@ -5,7 +5,7 @@ function setup() {
 	var canvas = createCanvas(690, 690);
 	canvas.parent('sketch-holder');
 	var a = createVector(width / 2, height);
-	var b = createVector(width / 2 , height - (height/4));
+	var b = createVector(width / 2 , height - (height/random(7,4)));
 	var root = new Branch(a, b, iteration, random(20, 120));
 	tree[0] = root;
 	colorMode(RGB);
@@ -19,12 +19,13 @@ function draw(){
 			    tree = tree.concat(tree[i].branch(iteration));
 			    tree[i].finished = true;
 				tree[i].show();
+			    tree.splice(i, 1);
 			}
 
 		}
 		iteration ++;
 	}
-	if (iteration > 15) {
+	if (iteration > 20) {
 		noLoop();
 	}
 }

@@ -63,12 +63,12 @@ function Branch(begin, end, iteration, hue){
 		var branches = [];
 
 		//number of new branches
-		var n = floor(random(4, 2));
+		var n = floor(random(5, 2));
 		var newEnd;
 
 		//if first generation add 5 branches
 		if(this.iteration == 0){
-			n = 7;
+			n = 5;
 		}
 		for (var i = 0; i < n; i++) {
 			newEnd = 0;

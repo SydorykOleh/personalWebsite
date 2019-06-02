@@ -10,5 +10,4 @@ github: CC_FractalTree
 
 Proceduraly created tree with a lot of randomization. Very happy with result.
 
-<div id="sketch-holder">
-</div>
+<div id="sketch-holder"></div>
