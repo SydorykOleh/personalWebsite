@@ -1,6 +1,6 @@
 
-- name: CGI
-  link: /cgi.html
+- name: RESUME
+  link: /resume.html
 - name: PORTFOLIO
   link: /portfolio.html
 - name: CODELAB
